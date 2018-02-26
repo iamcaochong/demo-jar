@@ -1,5 +1,6 @@
 FROM java
 VOLUME /tmp
+VOLUME /home
 ADD target/demo-0.0.1-SNAPSHOT.jar app.jar
 RUN bash -c 'touch /app.jar'
 ENV JAVA_OPTS=""
